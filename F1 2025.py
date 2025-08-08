@@ -132,5 +132,7 @@ fig.update_layout(
     margin=dict(l=50, r=30, t=50, b=30),
 )
 
-fig.update_traces(textposition="outside")
+fig.update_traces(
+    textposition="outside", textfont_color="black"  # set text color to black
+)
 st.plotly_chart(fig, use_container_width=True)
